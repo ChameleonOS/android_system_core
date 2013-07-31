@@ -283,7 +283,7 @@ on post-fs-data
     #setprop vold.post_fs_data_done 1
 
 # Include extra init file
-    import /init.cm.rc
+    import /init.cos.rc
 
 on boot
     # interactive governor
@@ -632,3 +632,4 @@ service mdnsd /system/bin/mdnsd
     socket mdnsd stream 0660 mdnsr inet
     disabled
     oneshot
+
